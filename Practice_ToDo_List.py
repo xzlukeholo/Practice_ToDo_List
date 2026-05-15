@@ -62,6 +62,12 @@ while True:
             print(f"{BOLD}{RED}Your list is empty. Nothing to delete.{RESET}")
             continue
 
+        print("Your To-Do Items:")
+        dlist_num = 0
+        for todo in ToDo_List:
+            dlist_num += 1
+            print(f"{dlist_num}.{BOLD}{GREEN}{todo}{RESET}")
+
         while True:
             try:
                 Delete_number = int(
